@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [SeleniumNSCompTest]">
+  <test name="TC1(failed)">
+    <parameter name="testData" value="TC1.xlsx"/>
+    <parameter name="appURL" value="http://www.amazon.in"/>
+    <parameter name="browserType" value="chrome"/>
+    <classes>
+      <class name="com.nscomp.tests.VerifyRegistration">
+        <methods>
+          <include name="closeReport"/>
+          <include name="report"/>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+          <include name="getResult"/>
+          <include name="initializeTestBaseSetup"/>
+          <include name="validateRegistration"/>
+        </methods>
+      </class> <!-- com.nscomp.tests.VerifyRegistration -->
+    </classes>
+  </test> <!-- TC1(failed) -->
+</suite> <!-- Failed suite [SeleniumNSCompTest] -->

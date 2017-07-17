@@ -1,0 +1,494 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<!-- <suite name="SeleniumNSCompTest" parallel="tests"> -->
+ <suite name="SeleniumNSCompTest">
+  <!-- <listeners>
+    <listener class-name="com.nscomp.utils.ExtentReporterNG" />
+  </listeners>  -->
+<test name="TC1">
+  <parameter name="browserType" value="chrome"/>
+  <parameter name="appURL" value="http://www.amazon.in"/>
+  <parameter name="testData" value="TC1.xlsx"></parameter>
+    <classes>
+      <class name="com.nscomp.tests.VerifyRegistration"/>
+    </classes>
+  </test>
+<!--   <test name="TC2"> -->
+<!--   <parameter name="browserType" value="firefox"/> -->
+<!--   <parameter name="appURL" value="http://www.amazon.in"/> -->
+<!--   <parameter name="testData" value="TC2.xlsx"></parameter> -->
+<!--     <classes> -->
+<!--       <class name="com.nscomp.tests.VerifySignIn"/> -->
+<!--     </classes> -->
+<!--   </test>  -->
+<!--   <test name="TC3"> -->
+<!--   <parameter name="browserType" value="chrome"/> -->
+<!--   <parameter name="appURL" value="http://www.amazon.in"/> -->
+<!--   <parameter name="testData" value="TC3.xlsx"></parameter> -->
+<!--     <classes> -->
+<!--       <class name="com.nscomp.tests.SearchItems"/> -->
+<!--     </classes> -->
+<!--   </test>  -->
+<!--   <test name="TC4"> -->
+<!--   <parameter name="browserType" value="chrome"/> -->
+<!--   <parameter name="appURL" value="http://www.amazon.in"/> -->
+<!--   <parameter name="testData" value="TC4.xlsx"></parameter> -->
+<!--     <classes> -->
+<!--       <class name="com.nscomp.tests.SearchInvalidCategory"/> -->
+<!--     </classes> -->
+<!--   </test>  -->
+<!--   <test name="TC5"> -->
+<!--   <parameter name="browserType" value="chrome"/> -->
+<!--   <parameter name="appURL" value="http://www.amazon.in"/> -->
+<!--   <parameter name="testData" value="TC5.xlsx"></parameter> -->
+<!--     <classes> -->
+<!--       <class name="com.nscomp.tests.RefineSearch"/> -->
+<!--     </classes> -->
+<!--   </test>  -->
+<!--   <test name="TC6"> -->
+<!--   <parameter name="browserType" value="chrome"/> -->
+<!--   <parameter name="appURL" value="http://www.amazon.in"/> -->
+<!--   <parameter name="testData" value="TC6.xlsx"></parameter> -->
+<!--     <classes> -->
+<!--       <class name="com.nscomp.tests.VerifyTodaysDeal"/> -->
+<!--     </classes> -->
+<!--   </test>  -->
+<!--   <test name="TC7"> -->
+<!--   <parameter name="browserType" value="chrome"/> -->
+<!--   <parameter name="appURL" value="http://www.amazon.in"/> -->
+<!--   <parameter name="testData" value="TC7.xlsx"></parameter> -->
+<!--     <classes> -->
+<!--       <class name="com.nscomp.tests.VerifyAdvancedSearch"/> -->
+<!--     </classes> -->
+<!--   </test>  -->
+<!--   <test name="TC8"> -->
+<!--   <parameter name="browserType" value="chrome"/> -->
+<!--   <parameter name="appURL" value="http://www.amazon.in"/> -->
+<!--   <parameter name="testData" value="TC8.xlsx"></parameter> -->
+<!--     <classes> -->
+<!--       <class name="com.nscomp.tests.VerifyBecomeAuthor"/> -->
+<!--     </classes> -->
+<!--   </test>  -->
+<!--   <test name="TC9"> -->
+<!--   <parameter name="browserType" value="chrome"/> -->
+<!--   <parameter name="appURL" value="http://www.amazon.in"/> -->
+<!--   <parameter name="testData" value="TC9.xlsx"></parameter> -->
+<!--     <classes> -->
+<!--       <class name="com.nscomp.tests.VerifyCountryPortals"/> -->
+<!--     </classes> -->
+<!--   </test>  -->
+<!--   <test name="TC10"> -->
+<!--   <parameter name="browserType" value="chrome"/> -->
+<!--   <parameter name="appURL" value="http://www.amazon.in"/> -->
+<!--   <parameter name="testData" value="TC10.xlsx"></parameter> -->
+<!--     <classes> -->
+<!--       <class name="com.nscomp.tests.VerifyAmazonCares"/> -->
+<!--     </classes> -->
+<!--   </test>   -->
+
+<!-- <test name="TC11"> -->
+<!--   <parameter name="browserType" value="chrome"/> -->
+<!--   <parameter name="appURL" value="http://www.amazon.in"/> -->
+<!--   <parameter name="testData" value="TC1.xlsx"></parameter> -->
+<!--     <classes> -->
+<!--       <class name="com.nscomp.tests.VerifyRegistration"/> -->
+<!--     </classes> -->
+<!--   </test> -->
+<!--   <test name="TC12"> -->
+<!--   <parameter name="browserType" value="chrome"/> -->
+<!--   <parameter name="appURL" value="http://www.amazon.in"/> -->
+<!--   <parameter name="testData" value="TC2.xlsx"></parameter> -->
+<!--     <classes> -->
+<!--       <class name="com.nscomp.tests.VerifySignIn"/> -->
+<!--     </classes> -->
+<!--   </test>  -->
+<!--   <test name="TC13"> -->
+<!--   <parameter name="browserType" value="chrome"/> -->
+<!--   <parameter name="appURL" value="http://www.amazon.in"/> -->
+<!--   <parameter name="testData" value="TC3.xlsx"></parameter> -->
+<!--     <classes> -->
+<!--       <class name="com.nscomp.tests.SearchItems"/> -->
+<!--     </classes> -->
+<!--   </test>  -->
+<!--   <test name="TC14"> -->
+<!--   <parameter name="browserType" value="chrome"/> -->
+<!--   <parameter name="appURL" value="http://www.amazon.in"/> -->
+<!--   <parameter name="testData" value="TC4.xlsx"></parameter> -->
+<!--     <classes> -->
+<!--       <class name="com.nscomp.tests.SearchInvalidCategory"/> -->
+<!--     </classes> -->
+<!--   </test>  -->
+<!--   <test name="TC15"> -->
+<!--   <parameter name="browserType" value="chrome"/> -->
+<!--   <parameter name="appURL" value="http://www.amazon.in"/> -->
+<!--   <parameter name="testData" value="TC5.xlsx"></parameter> -->
+<!--     <classes> -->
+<!--       <class name="com.nscomp.tests.RefineSearch"/> -->
+<!--     </classes> -->
+<!--   </test>  -->
+<!--   <test name="TC16"> -->
+<!--   <parameter name="browserType" value="chrome"/> -->
+<!--   <parameter name="appURL" value="http://www.amazon.in"/> -->
+<!--   <parameter name="testData" value="TC6.xlsx"></parameter> -->
+<!--     <classes> -->
+<!--       <class name="com.nscomp.tests.VerifyTodaysDeal"/> -->
+<!--     </classes> -->
+<!--   </test>  -->
+<!--   <test name="TC17"> -->
+<!--   <parameter name="browserType" value="chrome"/> -->
+<!--   <parameter name="appURL" value="http://www.amazon.in"/> -->
+<!--   <parameter name="testData" value="TC7.xlsx"></parameter> -->
+<!--     <classes> -->
+<!--       <class name="com.nscomp.tests.VerifyAdvancedSearch"/> -->
+<!--     </classes> -->
+<!--   </test>  -->
+<!--   <test name="TC18"> -->
+<!--   <parameter name="browserType" value="chrome"/> -->
+<!--   <parameter name="appURL" value="http://www.amazon.in"/> -->
+<!--   <parameter name="testData" value="TC8.xlsx"></parameter> -->
+<!--     <classes> -->
+<!--       <class name="com.nscomp.tests.VerifyBecomeAuthor"/> -->
+<!--     </classes> -->
+<!--   </test>  -->
+<!--   <test name="TC19"> -->
+<!--   <parameter name="browserType" value="chrome"/> -->
+<!--   <parameter name="appURL" value="http://www.amazon.in"/> -->
+<!--   <parameter name="testData" value="TC9.xlsx"></parameter> -->
+<!--     <classes> -->
+<!--       <class name="com.nscomp.tests.VerifyCountryPortals"/> -->
+<!--     </classes> -->
+<!--   </test>  -->
+<!--    <test name="TC20"> -->
+<!--   <parameter name="browserType" value="chrome"/> -->
+<!--   <parameter name="appURL" value="http://www.amazon.in"/> -->
+<!--   <parameter name="testData" value="TC10.xlsx"></parameter> -->
+<!--     <classes> -->
+<!--       <class name="com.nscomp.tests.VerifyAmazonCares"/> -->
+<!--     </classes> -->
+<!--   </test>   -->
+  
+<!--   <test name="TC21"> -->
+<!--   <parameter name="browserType" value="chrome"/> -->
+<!--   <parameter name="appURL" value="http://www.amazon.in"/> -->
+<!--   <parameter name="testData" value="TC1.xlsx"></parameter> -->
+<!--     <classes> -->
+<!--       <class name="com.nscomp.tests.VerifyRegistration"/> -->
+<!--     </classes> -->
+<!--   </test> -->
+<!--   <test name="TC22"> -->
+<!--   <parameter name="browserType" value="chrome"/> -->
+<!--   <parameter name="appURL" value="http://www.amazon.in"/> -->
+<!--   <parameter name="testData" value="TC2.xlsx"></parameter> -->
+<!--     <classes> -->
+<!--       <class name="com.nscomp.tests.VerifySignIn"/> -->
+<!--     </classes> -->
+<!--   </test>  -->
+<!--   <test name="TC23"> -->
+<!--   <parameter name="browserType" value="chrome"/> -->
+<!--   <parameter name="appURL" value="http://www.amazon.in"/> -->
+<!--   <parameter name="testData" value="TC3.xlsx"></parameter> -->
+<!--     <classes> -->
+<!--       <class name="com.nscomp.tests.SearchItems"/> -->
+<!--     </classes> -->
+<!--   </test>  -->
+<!--   <test name="TC24"> -->
+<!--   <parameter name="browserType" value="chrome"/> -->
+<!--   <parameter name="appURL" value="http://www.amazon.in"/> -->
+<!--   <parameter name="testData" value="TC4.xlsx"></parameter> -->
+<!--     <classes> -->
+<!--       <class name="com.nscomp.tests.SearchInvalidCategory"/> -->
+<!--     </classes> -->
+<!--   </test>  -->
+<!--   <test name="TC25"> -->
+<!--   <parameter name="browserType" value="chrome"/> -->
+<!--   <parameter name="appURL" value="http://www.amazon.in"/> -->
+<!--   <parameter name="testData" value="TC5.xlsx"></parameter> -->
+<!--     <classes> -->
+<!--       <class name="com.nscomp.tests.RefineSearch"/> -->
+<!--     </classes> -->
+<!--   </test>  -->
+<!--   <test name="TC26"> -->
+<!--   <parameter name="browserType" value="chrome"/> -->
+<!--   <parameter name="appURL" value="http://www.amazon.in"/> -->
+<!--   <parameter name="testData" value="TC6.xlsx"></parameter> -->
+<!--     <classes> -->
+<!--       <class name="com.nscomp.tests.VerifyTodaysDeal"/> -->
+<!--     </classes> -->
+<!--   </test>  -->
+<!--   <test name="TC27"> -->
+<!--   <parameter name="browserType" value="chrome"/> -->
+<!--   <parameter name="appURL" value="http://www.amazon.in"/> -->
+<!--   <parameter name="testData" value="TC7.xlsx"></parameter> -->
+<!--     <classes> -->
+<!--       <class name="com.nscomp.tests.VerifyAdvancedSearch"/> -->
+<!--     </classes> -->
+<!--   </test>  -->
+<!--   <test name="TC28"> -->
+<!--   <parameter name="browserType" value="chrome"/> -->
+<!--   <parameter name="appURL" value="http://www.amazon.in"/> -->
+<!--   <parameter name="testData" value="TC8.xlsx"></parameter> -->
+<!--     <classes> -->
+<!--       <class name="com.nscomp.tests.VerifyBecomeAuthor"/> -->
+<!--     </classes> -->
+<!--   </test>  -->
+<!--   <test name="TC29"> -->
+<!--   <parameter name="browserType" value="chrome"/> -->
+<!--   <parameter name="appURL" value="http://www.amazon.in"/> -->
+<!--   <parameter name="testData" value="TC9.xlsx"></parameter> -->
+<!--     <classes> -->
+<!--       <class name="com.nscomp.tests.VerifyCountryPortals"/> -->
+<!--     </classes> -->
+<!--   </test>  -->
+<!--    <test name="TC30"> -->
+<!--   <parameter name="browserType" value="chrome"/> -->
+<!--   <parameter name="appURL" value="http://www.amazon.in"/> -->
+<!--   <parameter name="testData" value="TC10.xlsx"></parameter> -->
+<!--     <classes> -->
+<!--       <class name="com.nscomp.tests.VerifyAmazonCares"/> -->
+<!--     </classes> -->
+<!--   </test>   -->
+  
+<!--   <test name="TC31"> -->
+<!--   <parameter name="browserType" value="chrome"/> -->
+<!--   <parameter name="appURL" value="http://www.amazon.in"/> -->
+<!--   <parameter name="testData" value="TC1.xlsx"></parameter> -->
+<!--     <classes> -->
+<!--       <class name="com.nscomp.tests.VerifyRegistration"/> -->
+<!--     </classes> -->
+<!--   </test> -->
+<!--   <test name="TC32"> -->
+<!--   <parameter name="browserType" value="chrome"/> -->
+<!--   <parameter name="appURL" value="http://www.amazon.in"/> -->
+<!--   <parameter name="testData" value="TC2.xlsx"></parameter> -->
+<!--     <classes> -->
+<!--       <class name="com.nscomp.tests.VerifySignIn"/> -->
+<!--     </classes> -->
+<!--   </test>  -->
+<!--   <test name="TC33"> -->
+<!--   <parameter name="browserType" value="chrome"/> -->
+<!--   <parameter name="appURL" value="http://www.amazon.in"/> -->
+<!--   <parameter name="testData" value="TC3.xlsx"></parameter> -->
+<!--     <classes> -->
+<!--       <class name="com.nscomp.tests.SearchItems"/> -->
+<!--     </classes> -->
+<!--   </test>  -->
+<!--   <test name="TC34"> -->
+<!--   <parameter name="browserType" value="chrome"/> -->
+<!--   <parameter name="appURL" value="http://www.amazon.in"/> -->
+<!--   <parameter name="testData" value="TC4.xlsx"></parameter> -->
+<!--     <classes> -->
+<!--       <class name="com.nscomp.tests.SearchInvalidCategory"/> -->
+<!--     </classes> -->
+<!--   </test>  -->
+<!--   <test name="TC35"> -->
+<!--   <parameter name="browserType" value="chrome"/> -->
+<!--   <parameter name="appURL" value="http://www.amazon.in"/> -->
+<!--   <parameter name="testData" value="TC5.xlsx"></parameter> -->
+<!--     <classes> -->
+<!--       <class name="com.nscomp.tests.RefineSearch"/> -->
+<!--     </classes> -->
+<!--   </test>  -->
+<!--   <test name="TC36"> -->
+<!--   <parameter name="browserType" value="chrome"/> -->
+<!--   <parameter name="appURL" value="http://www.amazon.in"/> -->
+<!--   <parameter name="testData" value="TC6.xlsx"></parameter> -->
+<!--     <classes> -->
+<!--       <class name="com.nscomp.tests.VerifyTodaysDeal"/> -->
+<!--     </classes> -->
+<!--   </test>  -->
+<!--   <test name="TC37"> -->
+<!--   <parameter name="browserType" value="chrome"/> -->
+<!--   <parameter name="appURL" value="http://www.amazon.in"/> -->
+<!--   <parameter name="testData" value="TC7.xlsx"></parameter> -->
+<!--     <classes> -->
+<!--       <class name="com.nscomp.tests.VerifyAdvancedSearch"/> -->
+<!--     </classes> -->
+<!--   </test>  -->
+<!--   <test name="TC38"> -->
+<!--   <parameter name="browserType" value="chrome"/> -->
+<!--   <parameter name="appURL" value="http://www.amazon.in"/> -->
+<!--   <parameter name="testData" value="TC8.xlsx"></parameter> -->
+<!--     <classes> -->
+<!--       <class name="com.nscomp.tests.VerifyBecomeAuthor"/> -->
+<!--     </classes> -->
+<!--   </test>  -->
+<!--   <test name="TC39"> -->
+<!--   <parameter name="browserType" value="chrome"/> -->
+<!--   <parameter name="appURL" value="http://www.amazon.in"/> -->
+<!--   <parameter name="testData" value="TC9.xlsx"></parameter> -->
+<!--     <classes> -->
+<!--       <class name="com.nscomp.tests.VerifyCountryPortals"/> -->
+<!--     </classes> -->
+<!--   </test>  -->
+<!--    <test name="TC40"> -->
+<!--   <parameter name="browserType" value="chrome"/> -->
+<!--   <parameter name="appURL" value="http://www.amazon.in"/> -->
+<!--   <parameter name="testData" value="TC10.xlsx"></parameter> -->
+<!--     <classes> -->
+<!--       <class name="com.nscomp.tests.VerifyAmazonCares"/> -->
+<!--     </classes> -->
+<!--   </test>   -->
+  
+  
+<!--   <test name="TC41"> -->
+<!--   <parameter name="browserType" value="chrome"/> -->
+<!--   <parameter name="appURL" value="http://www.amazon.in"/> -->
+<!--   <parameter name="testData" value="TC1.xlsx"></parameter> -->
+<!--     <classes> -->
+<!--       <class name="com.nscomp.tests.VerifyRegistration"/> -->
+<!--     </classes> -->
+<!--   </test> -->
+<!--   <test name="TC42"> -->
+<!--   <parameter name="browserType" value="chrome"/> -->
+<!--   <parameter name="appURL" value="http://www.amazon.in"/> -->
+<!--   <parameter name="testData" value="TC2.xlsx"></parameter> -->
+<!--     <classes> -->
+<!--       <class name="com.nscomp.tests.VerifySignIn"/> -->
+<!--     </classes> -->
+<!--   </test>  -->
+<!--   <test name="TC43"> -->
+<!--   <parameter name="browserType" value="chrome"/> -->
+<!--   <parameter name="appURL" value="http://www.amazon.in"/> -->
+<!--   <parameter name="testData" value="TC3.xlsx"></parameter> -->
+<!--     <classes> -->
+<!--       <class name="com.nscomp.tests.SearchItems"/> -->
+<!--     </classes> -->
+<!--   </test>  -->
+<!--   <test name="TC44"> -->
+<!--   <parameter name="browserType" value="chrome"/> -->
+<!--   <parameter name="appURL" value="http://www.amazon.in"/> -->
+<!--   <parameter name="testData" value="TC4.xlsx"></parameter> -->
+<!--     <classes> -->
+<!--       <class name="com.nscomp.tests.SearchInvalidCategory"/> -->
+<!--     </classes> -->
+<!--   </test>  -->
+<!--   <test name="TC45"> -->
+<!--   <parameter name="browserType" value="chrome"/> -->
+<!--   <parameter name="appURL" value="http://www.amazon.in"/> -->
+<!--   <parameter name="testData" value="TC5.xlsx"></parameter> -->
+<!--     <classes> -->
+<!--       <class name="com.nscomp.tests.RefineSearch"/> -->
+<!--     </classes> -->
+<!--   </test>  -->
+<!--   <test name="TC46"> -->
+<!--   <parameter name="browserType" value="chrome"/> -->
+<!--   <parameter name="appURL" value="http://www.amazon.in"/> -->
+<!--   <parameter name="testData" value="TC6.xlsx"></parameter> -->
+<!--     <classes> -->
+<!--       <class name="com.nscomp.tests.VerifyTodaysDeal"/> -->
+<!--     </classes> -->
+<!--   </test>  -->
+<!--   <test name="TC47"> -->
+<!--   <parameter name="browserType" value="chrome"/> -->
+<!--   <parameter name="appURL" value="http://www.amazon.in"/> -->
+<!--   <parameter name="testData" value="TC7.xlsx"></parameter> -->
+<!--     <classes> -->
+<!--       <class name="com.nscomp.tests.VerifyAdvancedSearch"/> -->
+<!--     </classes> -->
+<!--   </test>  -->
+<!--   <test name="TC48"> -->
+<!--   <parameter name="browserType" value="chrome"/> -->
+<!--   <parameter name="appURL" value="http://www.amazon.in"/> -->
+<!--   <parameter name="testData" value="TC8.xlsx"></parameter> -->
+<!--     <classes> -->
+<!--       <class name="com.nscomp.tests.VerifyBecomeAuthor"/> -->
+<!--     </classes> -->
+<!--   </test>  -->
+<!--   <test name="TC49"> -->
+<!--   <parameter name="browserType" value="chrome"/> -->
+<!--   <parameter name="appURL" value="http://www.amazon.in"/> -->
+<!--   <parameter name="testData" value="TC9.xlsx"></parameter> -->
+<!--     <classes> -->
+<!--       <class name="com.nscomp.tests.VerifyCountryPortals"/> -->
+<!--     </classes> -->
+<!--   </test>  -->
+<!--    <test name="TC50"> -->
+<!--   <parameter name="browserType" value="chrome"/> -->
+<!--   <parameter name="appURL" value="http://www.amazon.in"/> -->
+<!--   <parameter name="testData" value="TC10.xlsx"></parameter> -->
+<!--     <classes> -->
+<!--       <class name="com.nscomp.tests.VerifyAmazonCares"/> -->
+<!--     </classes> -->
+<!--   </test>   -->
+  
+  
+<!--   <test name="TC51"> -->
+<!--   <parameter name="browserType" value="chrome"/> -->
+<!--   <parameter name="appURL" value="http://www.amazon.in"/> -->
+<!--   <parameter name="testData" value="TC1.xlsx"></parameter> -->
+<!--     <classes> -->
+<!--       <class name="com.nscomp.tests.VerifyRegistration"/> -->
+<!--     </classes> -->
+<!--   </test> -->
+<!--   <test name="TC52"> -->
+<!--   <parameter name="browserType" value="chrome"/> -->
+<!--   <parameter name="appURL" value="http://www.amazon.in"/> -->
+<!--   <parameter name="testData" value="TC2.xlsx"></parameter> -->
+<!--     <classes> -->
+<!--       <class name="com.nscomp.tests.VerifySignIn"/> -->
+<!--     </classes> -->
+<!--   </test>  -->
+<!--   <test name="TC53"> -->
+<!--   <parameter name="browserType" value="chrome"/> -->
+<!--   <parameter name="appURL" value="http://www.amazon.in"/> -->
+<!--   <parameter name="testData" value="TC3.xlsx"></parameter> -->
+<!--     <classes> -->
+<!--       <class name="com.nscomp.tests.SearchItems"/> -->
+<!--     </classes> -->
+<!--   </test>  -->
+<!--   <test name="TC54"> -->
+<!--   <parameter name="browserType" value="chrome"/> -->
+<!--   <parameter name="appURL" value="http://www.amazon.in"/> -->
+<!--   <parameter name="testData" value="TC4.xlsx"></parameter> -->
+<!--     <classes> -->
+<!--       <class name="com.nscomp.tests.SearchInvalidCategory"/> -->
+<!--     </classes> -->
+<!--   </test>  -->
+<!--   <test name="TC55"> -->
+<!--   <parameter name="browserType" value="chrome"/> -->
+<!--   <parameter name="appURL" value="http://www.amazon.in"/> -->
+<!--   <parameter name="testData" value="TC5.xlsx"></parameter> -->
+<!--     <classes> -->
+<!--       <class name="com.nscomp.tests.RefineSearch"/> -->
+<!--     </classes> -->
+<!--   </test>  -->
+<!--   <test name="TC56"> -->
+<!--   <parameter name="browserType" value="chrome"/> -->
+<!--   <parameter name="appURL" value="http://www.amazon.in"/> -->
+<!--   <parameter name="testData" value="TC6.xlsx"></parameter> -->
+<!--     <classes> -->
+<!--       <class name="com.nscomp.tests.VerifyTodaysDeal"/> -->
+<!--     </classes> -->
+<!--   </test>  -->
+<!--   <test name="TC57"> -->
+<!--   <parameter name="browserType" value="chrome"/> -->
+<!--   <parameter name="appURL" value="http://www.amazon.in"/> -->
+<!--   <parameter name="testData" value="TC7.xlsx"></parameter> -->
+<!--     <classes> -->
+<!--       <class name="com.nscomp.tests.VerifyAdvancedSearch"/> -->
+<!--     </classes> -->
+<!--   </test>  -->
+<!--   <test name="TC58"> -->
+<!--   <parameter name="browserType" value="chrome"/> -->
+<!--   <parameter name="appURL" value="http://www.amazon.in"/> -->
+<!--   <parameter name="testData" value="TC8.xlsx"></parameter> -->
+<!--     <classes> -->
+<!--       <class name="com.nscomp.tests.VerifyBecomeAuthor"/> -->
+<!--     </classes> -->
+<!--   </test>  -->
+<!--   <test name="TC59"> -->
+<!--   <parameter name="browserType" value="chrome"/> -->
+<!--   <parameter name="appURL" value="http://www.amazon.in"/> -->
+<!--   <parameter name="testData" value="TC9.xlsx"></parameter> -->
+<!--     <classes> -->
+<!--       <class name="com.nscomp.tests.VerifyCountryPortals"/> -->
+<!--     </classes> -->
+<!--   </test>  -->
+<!--    <test name="TC60"> -->
+<!--   <parameter name="browserType" value="chrome"/> -->
+<!--   <parameter name="appURL" value="http://www.amazon.in"/> -->
+<!--   <parameter name="testData" value="TC10.xlsx"></parameter> -->
+<!--     <classes> -->
+<!--       <class name="com.nscomp.tests.VerifyAmazonCares"/> -->
+<!--     </classes> -->
+<!--   </test>   -->
+  </suite>

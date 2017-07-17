@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="SeleniumNSCompTest" duration-ms="14877" started-at="2017-07-12T06:10:42Z" finished-at="2017-07-12T06:10:57Z">
+    <groups>
+    </groups>
+    <test name="TC1" duration-ms="14877" started-at="2017-07-12T06:10:42Z" finished-at="2017-07-12T06:10:57Z">
+      <class name="com.nscomp.tests.VerifyRegistration">
+        <test-method status="PASS" signature="report()[pri:0, instance:com.nscomp.tests.VerifyRegistration@73846619]" name="report" is-config="true" duration-ms="150" started-at="2017-07-12T11:40:42Z" finished-at="2017-07-12T11:40:42Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- report -->
+        <test-method status="PASS" signature="initializeTestBaseSetup(java.lang.String, java.lang.String)[pri:0, instance:com.nscomp.tests.VerifyRegistration@73846619]" name="initializeTestBaseSetup" is-config="true" duration-ms="5395" started-at="2017-07-12T11:40:42Z" finished-at="2017-07-12T11:40:48Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[http://www.amazon.in]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initializeTestBaseSetup -->
+        <test-method status="PASS" signature="setUp(java.lang.String)[pri:0, instance:com.nscomp.tests.VerifyRegistration@73846619]" name="setUp" is-config="true" duration-ms="500" started-at="2017-07-12T11:40:48Z" finished-at="2017-07-12T11:40:48Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[TC1.xlsx]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="validateRegistration()[pri:0, instance:com.nscomp.tests.VerifyRegistration@73846619]" name="validateRegistration" duration-ms="8064" started-at="2017-07-12T11:40:48Z" finished-at="2017-07-12T11:40:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateRegistration -->
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.nscomp.tests.VerifyRegistration@73846619]" name="getResult" is-config="true" duration-ms="1" started-at="2017-07-12T11:40:56Z" finished-at="2017-07-12T11:40:56Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=validateRegistration status=SUCCESS method=VerifyRegistration.validateRegistration()[pri:0, instance:com.nscomp.tests.VerifyRegistration@73846619] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.nscomp.tests.VerifyRegistration@73846619]" name="tearDown" is-config="true" duration-ms="907" started-at="2017-07-12T11:40:56Z" finished-at="2017-07-12T11:40:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="closeReport()[pri:0, instance:com.nscomp.tests.VerifyRegistration@73846619]" name="closeReport" is-config="true" duration-ms="169" started-at="2017-07-12T11:40:57Z" finished-at="2017-07-12T11:40:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeReport -->
+      </class> <!-- com.nscomp.tests.VerifyRegistration -->
+    </test> <!-- TC1 -->
+  </suite> <!-- SeleniumNSCompTest -->
+</testng-results>
